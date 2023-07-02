@@ -12,7 +12,7 @@ source:
 build:
   script:
     - {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,6 +29,8 @@ requirements:
     - python
 
 test:
+  imports:
+    - HLL
   commands:
     - pip check
   requires:
