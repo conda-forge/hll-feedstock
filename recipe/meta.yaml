@@ -29,6 +29,8 @@ requirements:
     - python
 
 test:
+  imports:
+    - HLL
   commands:
     - pip check
   requires:
