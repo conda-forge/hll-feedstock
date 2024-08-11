@@ -1,5 +1,5 @@
 {% set name = "hll" %}
-{% set version = "2.1.7" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/HLL-{{ version }}.tar.gz
-  sha256: 619597887caa3bafe26134d2777a61947a804970eaf181fc8f430b835a2764eb
+  sha256: 036791fbf591804b82ebaf107b66a6ee1c0f6f483f8c83af84c4bccd9d30bdf8
 
 build:
   skip: true  # [py<38]
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
