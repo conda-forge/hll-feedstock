@@ -1,5 +1,5 @@
 {% set name = "hll" %}
-{% set version = "2.4.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3805937c321606eb02a26e061297209978c05845fd5215b9cdcf2a5ac57a4be4
+  sha256: 9f17e21f1d41c5c6e50990b730e28a6baa9d06e6c62bb320c8e8d2a4f17634b9
 
 build:
   script:
